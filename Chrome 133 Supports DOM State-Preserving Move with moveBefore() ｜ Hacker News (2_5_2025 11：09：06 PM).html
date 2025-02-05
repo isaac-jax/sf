@@ -1,0 +1,562 @@
+<html lang=en op=item style><!--
+ Page saved with SingleFile 
+ url: https://news.ycombinator.com/item?id=42946718 
+ saved date: Wed Feb 05 2025 23:09:06 GMT+0100 (Central European Standard Time)
+--><meta charset=utf-8><meta name=viewport content="width=device-width, initial-scale=1.0"><style>:root{--sf-img-0: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgMzIgMTYiIHdpZHRoPSIzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMiAyNyAxNC0yOSAxNCAyOXoiIGZpbGw9IiM5OTkiLz48L3N2Zz4=")}</style><style>body{font-family:Verdana,Geneva,sans-serif;font-size:10pt;color:#828282}td{font-family:Verdana,Geneva,sans-serif;font-size:10pt;color:#828282}input{font-family:monospace;font-size:10pt}input[type="submit"]{font-family:Verdana,Geneva,sans-serif}textarea{font-family:monospace;font-size:10pt;resize:both}a:link{color:#000000;text-decoration:none}a:visited{color:#828282;text-decoration:none}.default{font-family:Verdana,Geneva,sans-serif;font-size:10pt;color:#828282}.title{font-family:Verdana,Geneva,sans-serif;font-size:10pt;color:#828282;overflow:hidden}.subtext{font-family:Verdana,Geneva,sans-serif;font-size:7pt;color:#828282}.yclinks{font-family:Verdana,Geneva,sans-serif;font-size:8pt;color:#828282}.pagetop{font-family:Verdana,Geneva,sans-serif;font-size:10pt;color:#222222;line-height:12px}.comhead{font-family:Verdana,Geneva,sans-serif;font-size:8pt;color:#828282}.comment{font-family:Verdana,Geneva,sans-serif;font-size:9pt}.hnname{margin-left:1px;margin-right:5px}#hnmain{min-width:796px}.title a{word-break:break-word}.comment a:link,.comment a:visited{text-decoration:underline}.nosee{visibility:hidden;pointer-events:none;cursor:default}.c00,.c00 a:link{color:#000000}.c5a,.c5a a:link,.c5a a:visited{color:#5a5a5a}.c88{color:#888888}.pagetop a:visited{color:#000000}.subtext a:link,.subtext a:visited{color:#828282}.subtext a:hover{text-decoration:underline}.comhead a:link,.subtext a:visited{color:#828282}.comhead a:hover{text-decoration:underline}.hnmore a:link,a:visited{color:#828282}.default p{margin-top:8px;margin-bottom:0px}.votearrow{width:10px;height:10px;border:0px;margin:3px 2px 6px;background:var(--sf-img-0),linear-gradient(transparent,transparent) no-repeat;background-size:10px}@media only screen and (-webkit-min-device-pixel-ratio:2),only screen and (min-device-pixel-ratio:2){.votearrow{background-size:10px;background-image:var(--sf-img-0),linear-gradient(transparent,transparent)}}@media only screen and (min-width:300px) and (max-width:750px){#hnmain{width:100%;min-width:0}body{padding:0;margin:0;width:100%}td{height:inherit!important}.comment{font-size:inherit}span.pagetop{display:block;margin:3px 5px;font-size:12px;line-height:normal}span.pagetop b{display:block;font-size:15px}table.comment-tree .comment a{display:inline-block;max-width:200px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;vertical-align:top}.title{font-size:11pt;line-height:14pt}.subtext{font-size:9pt}.votearrow{transform:scale(1.3,1.3);margin-right:6px}.votelinks{min-width:18px}.votelinks a{display:block;margin-bottom:9px}input[type="text"],textarea{font-size:16px;width:90%}}.comment{max-width:1215px;overflow-wrap:anywhere}@media only screen and (min-width:300px) and (max-width:389px){.comment{max-width:270px;overflow:hidden}}@media only screen and (min-width:390px) and (max-width:509px){.comment{max-width:350px;overflow:hidden}}@media only screen and (min-width:510px) and (max-width:599px){.comment{max-width:460px;overflow:hidden}}@media only screen and (min-width:600px) and (max-width:689px){.comment{max-width:540px;overflow:hidden}}@media only screen and (min-width:690px) and (max-width:809px){.comment{max-width:620px;overflow:hidden}}@media only screen and (min-width:810px) and (max-width:899px){.comment{max-width:730px;overflow:hidden}}@media only screen and (min-width:900px) and (max-width:1079px){.comment{max-width:810px;overflow:hidden}}@media only screen and (min-width:1080px) and (max-width:1169px){.comment{max-width:970px;overflow:hidden}}@media only screen and (min-width:1170px) and (max-width:1259px){.comment{max-width:1050px;overflow:hidden}}@media only screen and (min-width:1260px) and (max-width:1349px){.comment{max-width:1130px;overflow:hidden}}</style>
+<link rel=canonical href="https://news.ycombinator.com/item?id=42946718">
+<title>Chrome 133 Supports DOM State-Preserving Move with moveBefore() | Hacker News</title><meta name=referrer content=no-referrer><link rel=icon href=data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjE4IiB2aWV3Qm94PSI0IDQgMTg4IDE4OCIgd2lkdGg9IjE4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im00IDRoMTg4djE4OGgtMTg4eiIgZmlsbD0iI2Y2MCIvPjxwYXRoIGQ9Im03My4yNTIxNzU2IDQ1LjAxIDIyLjc0NzgyNDQgNDcuMzkxMzAwODMgMjIuNzQ3ODI0NC00Ny4zOTEzMDA4M2gxOS41NjU2OTYzMWwtMzQuMzIzNTIwNzEgNjQuNDg2NjE0Njh2NDEuNDkzMzg1MzJoLTE1Ljk4di00MS40OTMzODUzMmwtMzQuMzIzNTIwNzEtNjQuNDg2NjE0Njh6IiBmaWxsPSIjZmZmIi8+PC9zdmc+><style>.sf-hidden{display:none!important}</style><meta http-equiv=content-security-policy content="default-src 'none'; font-src 'self' data:; img-src 'self' data:; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'unsafe-inline' data:; object-src 'self' data:; frame-src 'self' data:;"><body><center><table id=hnmain border=0 cellpadding=0 cellspacing=0 width=85% bgcolor=#f6f6ef>
+ <tbody><tr><td bgcolor=#ff6600><table border=0 cellpadding=0 cellspacing=0 width=100% style=padding:2px><tbody><tr><td style=width:18px;padding-right:4px><a href=https://news.ycombinator.com/><img src=data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjE4IiB2aWV3Qm94PSI0IDQgMTg4IDE4OCIgd2lkdGg9IjE4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im00IDRoMTg4djE4OGgtMTg4eiIgZmlsbD0iI2Y2MCIvPjxwYXRoIGQ9Im03My4yNTIxNzU2IDQ1LjAxIDIyLjc0NzgyNDQgNDcuMzkxMzAwODMgMjIuNzQ3ODI0NC00Ny4zOTEzMDA4M2gxOS41NjU2OTYzMWwtMzQuMzIzNTIwNzEgNjQuNDg2NjE0Njh2NDEuNDkzMzg1MzJoLTE1Ljk4di00MS40OTMzODUzMmwtMzQuMzIzNTIwNzEtNjQuNDg2NjE0Njh6IiBmaWxsPSIjZmZmIi8+PC9zdmc+ width=18 height=18 style="border:1px white solid;display:block"></a></td>
+ <td style=line-height:12pt;height:10px><span class=pagetop><b class=hnname><a href=https://news.ycombinator.com/news>Hacker News</a></b>
+ <a href=https://news.ycombinator.com/newest>new</a> | <a href="https://news.ycombinator.com/threads?id=mattiasJohnson">threads</a> | <a href=https://news.ycombinator.com/front>past</a> | <a href=https://news.ycombinator.com/newcomments>comments</a> | <a href=https://news.ycombinator.com/ask>ask</a> | <a href=https://news.ycombinator.com/show>show</a> | <a href=https://news.ycombinator.com/jobs>jobs</a> | <a href=https://news.ycombinator.com/submit rel=nofollow>submit</a> </span><td style=text-align:right;padding-right:4px><span class=pagetop>
+ <a id=me href="https://news.ycombinator.com/user?id=mattiasJohnson">mattiasJohnson</a> (<span id=karma>2</span>) | <a id=logout rel=nofollow href="https://news.ycombinator.com/logout?auth=6032006b66f156586f5bbb182ff6d70ca854920a&amp;goto=item%3Fid%3D42946718">logout</a> </span></td>
+ </table></tr>
+<tr id=pagespace title="Chrome 133 Supports DOM State-Preserving Move with moveBefore()" style=height:10px><tr><td><table class=fatitem border=0>
+ <tbody><tr class="athing submission" id=42946718>
+ <td align=right valign=top class=title><span class=rank></span></td> <td valign=top class=votelinks><center><a id=up_42946718 class=clicky href="https://news.ycombinator.com/vote?id=42946718&amp;how=up&amp;auth=af8f3dc587370c64d228df1dae1c959db6840b33&amp;goto=item%3Fid%3D42946718"><div class=votearrow title=upvote></div></a></center><td class=title><span class=titleline><a href=https://chromestatus.com/feature/5135990159835136>Chrome 133 Supports DOM State-Preserving Move with moveBefore()</a><span class="sitebit comhead"> (<a href="https://news.ycombinator.com/from?site=chromestatus.com"><span class=sitestr>chromestatus.com</span></a>)</span></span><tr><td colspan=2><td class=subtext><span class=subline>
+ <span class=score id=score_42946718>164 points</span> by <a href="https://news.ycombinator.com/user?id=AshleysBrain" class=hnuser>AshleysBrain</a> <span class=age title="2025-02-05T10:49:12 1738752552"><a href="https://news.ycombinator.com/item?id=42946718">10 hours ago</a></span> <span id=unv_42946718></span> | <a href="https://news.ycombinator.com/hide?id=42946718&amp;auth=af8f3dc587370c64d228df1dae1c959db6840b33&amp;goto=item%3Fid%3D42946718">hide</a> | <a href="https://hn.algolia.com/?query=Chrome%20133%20Supports%20DOM%20State-Preserving%20Move%20with%20moveBefore%28%29&amp;type=story&amp;dateRange=all&amp;sort=byDate&amp;storyText=false&amp;prefix&amp;page=0" class=hnpast>past</a> | <a href="https://news.ycombinator.com/fave?id=42946718&amp;auth=af8f3dc587370c64d228df1dae1c959db6840b33">favorite</a> | <a href="https://news.ycombinator.com/item?id=42946718">57&nbsp;comments</a> </span>
+ </tr>
+ <tr><td style=height:10px><tr><td colspan=2><td><form action=comment method=post><textarea name=text rows=8 cols=80 wrap=virtual></textarea><br><br>
+<input type=submit value="add comment"></form></tr> </table><br><br><table border=0 class=comment-tree>
+ <tbody><tr class="athing comtr" id=42950329><td><table border=0> <tbody><tr> <td class=ind indent=0><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=0><td valign=top class=votelinks>
+ <center><a id=up_42950329 class=clicky href="https://news.ycombinator.com/vote?id=42950329&amp;how=up&amp;auth=cfd718276cbd49ad6f7260d4581c07e4ea0172d3&amp;goto=item%3Fid%3D42946718#42950329"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=btown" class=hnuser>btown</a> <span class=age title="2025-02-05T15:55:52 1738770952"><a href="https://news.ycombinator.com/item?id=42950329">5 hours ago</a></span> <span id=unv_42950329></span> <span class=navs>
+ | <a href=#42952576 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42950329 n=2 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">FYI a quick search shows that React has already integrated this on its main branch!<p><a href=https://github.com/facebook/react/pull/32036>https://github.com/facebook/react/pull/32036</a><p>I'm not exactly sure what the developer experience of this would be, but I expect it would make Portals significantly more powerful and able to be hot-swapped into different containers without disrupting either their internal state or even things like loaded iFrames. I expect others will be experimenting heavily with this now that there's platform support.<p><a href=https://github.com/facebook/react/issues/12247>https://github.com/facebook/react/issues/12247</a> (2018-2020) describes some of the use cases, with one partial solution being <a href=https://github.com/httptoolkit/react-reverse-portal>https://github.com/httptoolkit/react-reverse-portal</a> - the conversation around caveats of these approaches would be entirely different now!</p></div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42950329&amp;goto=item%3Fid%3D42946718%2342950329" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42950686><td><table border=0> <tbody><tr> <td class=ind indent=1><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=40><td valign=top class=votelinks>
+ <center><a id=up_42950686 class=clicky href="https://news.ycombinator.com/vote?id=42950686&amp;how=up&amp;auth=ac15eecbe5b4ab3a392d0fa2400c258b3a9d61c3&amp;goto=item%3Fid%3D42946718#42950686"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=pimterry" class=hnuser>pimterry</a> <span class=age title="2025-02-05T16:17:16 1738772236"><a href="https://news.ycombinator.com/item?id=42950686">5 hours ago</a></span> <span id=unv_42950686></span> <span class=navs>
+ | <a href=#42950329 class=clicky aria-hidden=true>parent</a> | <a href=#42952576 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42950686 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">I'm the developer of react-reverse-portal, this will definitely be a real help!<p>Iframes particularly have always been a pain point, as people often want to reparent them to move things around the DOM, but they always reload completely when you do so which causes all sorts of issues. This new API says it explicitly _doesn't_ reload iframes, so we'll be able to drop that caveat immediately (for supporting browsers, but hopefully Safari/FF will follow suit soon). Looks great!</p></div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42950686&amp;goto=item%3Fid%3D42946718%2342950686" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42952576><td><table border=0> <tbody><tr> <td class=ind indent=0><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=0><td valign=top class=votelinks>
+ <center><a id=up_42952576 class=clicky href="https://news.ycombinator.com/vote?id=42952576&amp;how=up&amp;auth=4419785f7f50320b331e10cd28da4f3f16a86cf6&amp;goto=item%3Fid%3D42946718#42952576"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=wlib" class=hnuser>wlib</a> <span class=age title="2025-02-05T18:03:58 1738778638"><a href="https://news.ycombinator.com/item?id=42952576">3 hours ago</a></span> <span id=unv_42952576></span> <span class=navs>
+ | <a href=#42950329 class=clicky aria-hidden=true>prev</a> | <a href=#42948079 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42952576 n=11 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">The biggest benefit to this is that it makes one of the slowest parts of virtual DOM diffing (longest common subsequence) no longer required. After this becomes supported in the mainstream, not even signal-based frameworks will have to include VDOM algorithms. I know this because I remember pushing for this to be supported a few years ago — a nice reminder that the standards are evolving and that nothing stops you from being a small part of the effort.<p>Next up — DOM parts and standardized signals, unified.</p></div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42952576&amp;goto=item%3Fid%3D42946718%2342952576" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42952819><td><table border=0> <tbody><tr> <td class=ind indent=1><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=40><td valign=top class=votelinks>
+ <center><a id=up_42952819 class=clicky href="https://news.ycombinator.com/vote?id=42952819&amp;how=up&amp;auth=d048da1726f54b1394de6e5d126f158c7b6fdaad&amp;goto=item%3Fid%3D42946718#42952819"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=spankalee" class=hnuser>spankalee</a> <span class=age title="2025-02-05T18:19:16 1738779556"><a href="https://news.ycombinator.com/item?id=42952819">3 hours ago</a></span> <span id=unv_42952819></span> <span class=navs>
+ | <a href=#42952576 class=clicky aria-hidden=true>parent</a> | <a href=#42953107 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42952819 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">DOM Parts + Signals will be an absolute game changer for the web platform.<p>Then there's a direct line to built-in declarative reactive templating: <a href=https://github.com/WICG/webcomponents/issues/1069>https://github.com/WICG/webcomponents/issues/1069</a></p></div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42952819&amp;goto=item%3Fid%3D42946718%2342952819" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42953107><td><table border=0> <tbody><tr> <td class=ind indent=1><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=40><td valign=top class=votelinks>
+ <center><a id=up_42953107 class=clicky href="https://news.ycombinator.com/vote?id=42953107&amp;how=up&amp;auth=36b6246aaf82ec24c6ef08d430ca12601b4addac&amp;goto=item%3Fid%3D42946718#42953107"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=giancarlostoro" class=hnuser>giancarlostoro</a> <span class=age title="2025-02-05T18:39:48 1738780788"><a href="https://news.ycombinator.com/item?id=42953107">2 hours ago</a></span> <span id=unv_42953107></span> <span class=navs>
+ | <a href=#42952576 class=clicky aria-hidden=true>parent</a> | <a href=#42952819 class=clicky aria-hidden=true>prev</a> | <a href=#42952915 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42953107 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">How do you even bring this up in a way that it gets noticed by the right people? There's so many times I read niche parts of the DOM that I feel need serious enhancements. I use Blazor (WASM) a lot more these days, so a lot of that is masked from me now.</div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42953107&amp;goto=item%3Fid%3D42946718%2342953107" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42952915><td><table border=0> <tbody><tr> <td class=ind indent=1><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=40><td valign=top class=votelinks>
+ <center><a id=up_42952915 class=clicky href="https://news.ycombinator.com/vote?id=42952915&amp;how=up&amp;auth=69a51e62531aba385480180329477f3476fc7a13&amp;goto=item%3Fid%3D42946718#42952915"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=dimal" class=hnuser>dimal</a> <span class=age title="2025-02-05T18:26:29 1738779989"><a href="https://news.ycombinator.com/item?id=42952915">3 hours ago</a></span> <span id=unv_42952915></span> <span class=navs>
+ | <a href=#42952576 class=clicky aria-hidden=true>parent</a> | <a href=#42953107 class=clicky aria-hidden=true>prev</a> | <a href=#42948079 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42952915 n=8 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">Why would this eliminate the need for any VDOM algorithm? I could see how it would simplify VDOM diffing but not eliminate it altogether.</div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42952915&amp;goto=item%3Fid%3D42946718%2342952915" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42953326><td><table border=0> <tbody><tr> <td class=ind indent=2><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=80><td valign=top class=votelinks>
+ <center><a id=up_42953326 class=clicky href="https://news.ycombinator.com/vote?id=42953326&amp;how=up&amp;auth=d3ecc10d6c923b16201a54f51ee437ba4ee3934d&amp;goto=item%3Fid%3D42946718#42953326"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=spankalee" class=hnuser>spankalee</a> <span class=age title="2025-02-05T18:53:53 1738781633"><a href="https://news.ycombinator.com/item?id=42953326">2 hours ago</a></span> <span id=unv_42953326></span> <span class=navs>
+ | <a href=#42952576 class=clicky aria-hidden=true>root</a> | <a href=#42952915 class=clicky aria-hidden=true>parent</a> | <a href=#42948079 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42953326 n=7 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">VDOM hasn't been needed for a long while, if ever.<p>You can do a lot better just checking if the template that/s rendering to a spot in the DOM is the same or different from the previous template. If it's the same, just update the bindings from the template, if it's different re-render the whole thing.<p>That's simpler and faster, but the one thing it leaves out is stateful reordering of lists. So you can have a specific re-ordering code path, which is simpler than a full VDOM, but if you want to preserve state like moveBefore() does, even that reordering gets pretty complicated because you can only preserve state for <i>one</i> contiguous range of nodes that you don't actually move - instead you move all the other nodes around them. moveBefore() just eliminates all that extra complexity.<p>There's also a couple of standards issues open for native reordering of siblings, like reorderChildren(). That would eliminate the re-ordering code completely.</p></div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42953326&amp;goto=item%3Fid%3D42946718%2342953326" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42954089><td><table border=0> <tbody><tr> <td class=ind indent=3><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=120><td valign=top class=votelinks>
+ <center><a id=up_42954089 class=clicky href="https://news.ycombinator.com/vote?id=42954089&amp;how=up&amp;auth=7def1764a7fbe438d936830d2388387e6b9059fd&amp;goto=item%3Fid%3D42946718#42954089"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=theultdev" class=hnuser>theultdev</a> <span class=age title="2025-02-05T19:49:11 1738784951"><a href="https://news.ycombinator.com/item?id=42954089">1 hour ago</a></span> <span id=unv_42954089></span> <span class=navs>
+ | <a href=#42952576 class=clicky aria-hidden=true>root</a> | <a href=#42953326 class=clicky aria-hidden=true>parent</a> | <a href=#42948079 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42954089 n=6 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">there's other reasons for the vdom though.<p>vdom is necessary in react to abstract the view from the platform so it can be represented by react-dom and react-native[-x] bridges.</p></div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42954089&amp;goto=item%3Fid%3D42946718%2342954089" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42954117><td><table border=0> <tbody><tr> <td class=ind indent=4><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=160><td valign=top class=votelinks>
+ <center><a id=up_42954117 class=clicky href="https://news.ycombinator.com/vote?id=42954117&amp;how=up&amp;auth=eb7761f2a65c894ecbac90062f0f2172724ceed4&amp;goto=item%3Fid%3D42946718#42954117"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=spankalee" class=hnuser>spankalee</a> <span class=age title="2025-02-05T19:51:04 1738785064"><a href="https://news.ycombinator.com/item?id=42954117">1 hour ago</a></span> <span id=unv_42954117></span> <span class=navs>
+ | <a href=#42952576 class=clicky aria-hidden=true>root</a> | <a href=#42954089 class=clicky aria-hidden=true>parent</a> | <a href=#42954506 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42954117 n=4 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">That has very little bearing on the web platform. I personally don't care for meta-platforms that abstract away the web.</div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42954117&amp;goto=item%3Fid%3D42946718%2342954117" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42954140><td><table border=0> <tbody><tr> <td class=ind indent=5><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=200><td valign=top class=votelinks>
+ <center><a id=up_42954140 class=clicky href="https://news.ycombinator.com/vote?id=42954140&amp;how=up&amp;auth=6452e54878c0d1890ee3f62e01b279141030ab68&amp;goto=item%3Fid%3D42946718#42954140"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=theultdev" class=hnuser>theultdev</a> <span class=age title="2025-02-05T19:52:23 1738785143"><a href="https://news.ycombinator.com/item?id=42954140">1 hour ago</a></span> <span id=unv_42954140></span> <span class=navs>
+ | <a href=#42952576 class=clicky aria-hidden=true>root</a> | <a href=#42954117 class=clicky aria-hidden=true>parent</a> | <a href=#42954506 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42954140 n=3 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">It does have an impact on app development. I personally don't care for web-only libraries / frameworks.</div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42954140&amp;goto=item%3Fid%3D42946718%2342954140" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42954347><td><table border=0> <tbody><tr> <td class=ind indent=6><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=240><td valign=top class=votelinks>
+ <center><a id=up_42954347 class=clicky href="https://news.ycombinator.com/vote?id=42954347&amp;how=up&amp;auth=fdf77f87795704ca717f1a2635e6441f7cdf8b81&amp;goto=item%3Fid%3D42946718#42954347"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=spankalee" class=hnuser>spankalee</a> <span class=age title="2025-02-05T20:06:06 1738785966"><a href="https://news.ycombinator.com/item?id=42954347">1 hour ago</a></span> <span id=unv_42954347></span> <span class=navs>
+ | <a href=#42952576 class=clicky aria-hidden=true>root</a> | <a href=#42954140 class=clicky aria-hidden=true>parent</a> | <a href=#42954506 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42954347 n=2 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">I mean that's fine, but when mixed into a conversation on web standards and APIs it leads to a place where you don't care about any web-specific evolution including most progress on the DOM. You end up only caring about a future of WASM + WebGPU, etc. This is exactly where some of the original React core team said they wanted to go - they just wanted a network connected framebuffer.<p>Again, fine, but I personally prefer a vibrant web platform that evolves to meet the needs of web developers.</p></div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42954347&amp;goto=item%3Fid%3D42946718%2342954347" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42954737><td><table border=0> <tbody><tr> <td class=ind indent=7><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=280><td valign=top class=votelinks>
+ <center><a id=up_42954737 class=clicky href="https://news.ycombinator.com/vote?id=42954737&amp;how=up&amp;auth=ce185e15f8080f2996d5ac0f5e8c3043a5773a44&amp;goto=item%3Fid%3D42946718#42954737"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=theultdev" class=hnuser>theultdev</a> <span class=age title="2025-02-05T20:36:46 1738787806"><a href="https://news.ycombinator.com/item?id=42954737">56 minutes ago</a></span> <span id=unv_42954737></span> <span class=navs>
+ | <a href=#42952576 class=clicky aria-hidden=true>root</a> | <a href=#42954347 class=clicky aria-hidden=true>parent</a> | <a href=#42954506 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42954737 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">Don't get me wrong, I'm happy for the change. It will improve things overall, and more power to web-only implementations.<p>My only intent was to point out another function of the vdom being discussed.<p>For WASM+WebGPU, I doubt it will ever be up to the same accessibility and feel that react-native-web gives. Just look at Flutter.</p></div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42954737&amp;goto=item%3Fid%3D42946718%2342954737" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42954506><td><table border=0> <tbody><tr> <td class=ind indent=4><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=160><td valign=top class=votelinks>
+ <center><a id=up_42954506 class=clicky href="https://news.ycombinator.com/vote?id=42954506&amp;how=up&amp;auth=588843aa4cc59a08caa4178d47af88a7ed08b162&amp;goto=item%3Fid%3D42946718#42954506"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=wlib" class=hnuser>wlib</a> <span class=age title="2025-02-05T20:17:21 1738786641"><a href="https://news.ycombinator.com/item?id=42954506">1 hour ago</a></span> <span id=unv_42954506></span> <span class=navs>
+ | <a href=#42952576 class=clicky aria-hidden=true>root</a> | <a href=#42954089 class=clicky aria-hidden=true>parent</a> | <a href=#42954117 class=clicky aria-hidden=true>prev</a> | <a href=#42948079 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42954506 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">You can still have a framework-specific render tree that maps to the DOM that tracks changes with signals instead of diffing. We’re just saying that there’s no requirement for diffing algorithms anymore to performantly and correctly reconcile state to the DOM. Keyed children was the last place it was needed.</div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42954506&amp;goto=item%3Fid%3D42946718%2342954506" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42948079><td><table border=0> <tbody><tr> <td class=ind indent=0><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=0><td valign=top class=votelinks>
+ <center><a id=up_42948079 class=clicky href="https://news.ycombinator.com/vote?id=42948079&amp;how=up&amp;auth=86b17f2738a6769fdd81d913ea3028b4e5651467&amp;goto=item%3Fid%3D42946718#42948079"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=spankalee" class=hnuser>spankalee</a> <span class=age title="2025-02-05T13:19:41 1738761581"><a href="https://news.ycombinator.com/item?id=42948079">8 hours ago</a></span> <span id=unv_42948079></span> <span class=navs>
+ | <a href=#42952576 class=clicky aria-hidden=true>prev</a> | <a href=#42951911 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42948079 n=2 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">This is going to be great for rendering libraries that do keyed loops and for some portal systems.<p>You'll be able to reorder items in a list while preserving focus, without reloading iframes, and keeping audio and video playing.<p>We have a draft PR for support in Lit, and will try to ship that as soon as possible.</p></div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42948079&amp;goto=item%3Fid%3D42946718%2342948079" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42950277><td><table border=0> <tbody><tr> <td class=ind indent=1><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=40><td valign=top class=votelinks>
+ <center><a id=up_42950277 class=clicky href="https://news.ycombinator.com/vote?id=42950277&amp;how=up&amp;auth=69e4487b5db63a19a45edc4ad1eed342885c7d5c&amp;goto=item%3Fid%3D42946718#42950277"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=jonkoops" class=hnuser>jonkoops</a> <span class=age title="2025-02-05T15:52:46 1738770766"><a href="https://news.ycombinator.com/item?id=42950277">5 hours ago</a></span> <span id=unv_42950277></span> <span class=navs>
+ | <a href=#42948079 class=clicky aria-hidden=true>parent</a> | <a href=#42951911 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42950277 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">Also great for rich interactive experiences that use traditional server side rendering to a large degree, this would allow you to make something like the Spotify web application without the need for large client side heavy JavaScript to render things.</div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42950277&amp;goto=item%3Fid%3D42946718%2342950277" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42951911><td><table border=0> <tbody><tr> <td class=ind indent=0><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=0><td valign=top class=votelinks>
+ <center><a id=up_42951911 class=clicky href="https://news.ycombinator.com/vote?id=42951911&amp;how=up&amp;auth=197c9350ec68ae36dbacca091be9fd16fc593e42&amp;goto=item%3Fid%3D42946718#42951911"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=sureIy" class=hnuser>sureIy</a> <span class=age title="2025-02-05T17:22:19 1738776139"><a href="https://news.ycombinator.com/item?id=42951911">4 hours ago</a></span> <span id=unv_42951911></span> <span class=navs>
+ | <a href=#42948079 class=clicky aria-hidden=true>prev</a> | <a href=#42955014 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42951911 n=3 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">In typical Chrome fashion, they shipped an API that is in status "Specification currently under development in a Working Group"<p>I don't understand the need for this awkward API.<p>Ok, `otherParent.append(existingIframe)` reloads the iframe, but that's just a legacy behavior. Why not toggle the new behavior by calling `existingIframe.holdMyBeer()`? This way I could just continue using .prepend/.append/.before/.after et — which by the way support multiple elements at once, unlike moveBefore.<p>Ridiculous choice, but I'm not even surprised anymore.</p></div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42951911&amp;goto=item%3Fid%3D42946718%2342951911" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42954102><td><table border=0> <tbody><tr> <td class=ind indent=1><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=40><td valign=top class=votelinks>
+ <center><a id=up_42954102 class=clicky href="https://news.ycombinator.com/vote?id=42954102&amp;how=up&amp;auth=04e64a736a0aac3f4a5587182ceef6afdef496c9&amp;goto=item%3Fid%3D42946718#42954102"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=spankalee" class=hnuser>spankalee</a> <span class=age title="2025-02-05T19:50:15 1738785015"><a href="https://news.ycombinator.com/item?id=42954102">1 hour ago</a></span> <span id=unv_42954102></span> <span class=navs>
+ | <a href=#42951911 class=clicky aria-hidden=true>parent</a> | <a href=#42954281 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42954102 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">&gt; I don't understand the need for this awkward API.<p>Well, it's clear you didn't take the time to try. There are multiple threads on this and related topics, with inputs from all browser vendors.<p>This has been a high-priority standards request from framework and rendering library maintainers for many, many years. Chrome is not at all being ridiculous.</p></div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42954102&amp;goto=item%3Fid%3D42946718%2342954102" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42954281><td><table border=0> <tbody><tr> <td class=ind indent=1><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=40><td valign=top class=votelinks>
+ <center><a id=up_42954281 class=clicky href="https://news.ycombinator.com/vote?id=42954281&amp;how=up&amp;auth=51b247320962d18bb93a16ca57fe339b689d7dd6&amp;goto=item%3Fid%3D42946718#42954281"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=AlexErrant" class=hnuser>AlexErrant</a> <span class=age title="2025-02-05T20:01:45 1738785705"><a href="https://news.ycombinator.com/item?id=42954281">1 hour ago</a></span> <span id=unv_42954281></span> <span class=navs>
+ | <a href=#42951911 class=clicky aria-hidden=true>parent</a> | <a href=#42954102 class=clicky aria-hidden=true>prev</a> | <a href=#42955014 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42954281 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">It's stage 3... and "the existence of stage 4 is basically a formality"<p>&gt; [stage 3] basically means "finished, pending editorial nit review---but since multiple implementations haven't happened yet, there's a reasonable chance that we'll discover something is broken, and need to fix the normative content<p><a href=https://github.com/whatwg/meta/issues/336#issuecomment-24874>https://github.com/whatwg/meta/issues/336#issuecomment-24874</a>...</p></div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42954281&amp;goto=item%3Fid%3D42946718%2342954281" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42955014><td><table border=0> <tbody><tr> <td class=ind indent=0><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=0><td valign=top class=votelinks>
+ <center><a id=up_42955014 class=clicky href="https://news.ycombinator.com/vote?id=42955014&amp;how=up&amp;auth=0d27b0a75656e836fe17813445c43b2ac4eea688&amp;goto=item%3Fid%3D42946718#42955014"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=paradox460" class=hnuser>paradox460</a> <span class=age title="2025-02-05T20:57:55 1738789075"><a href="https://news.ycombinator.com/item?id=42955014">35 minutes ago</a></span> <span id=unv_42955014></span> <span class=navs>
+ | <a href=#42951911 class=clicky aria-hidden=true>prev</a> | <a href=#42948119 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42955014 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">This is one of those little changes that just quietly drops, and winds up having tremendous impact. Like XMLHttpRequest back in the day</div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42955014&amp;goto=item%3Fid%3D42946718%2342955014" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42948119><td><table border=0> <tbody><tr> <td class=ind indent=0><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=0><td valign=top class=votelinks>
+ <center><a id=up_42948119 class=clicky href="https://news.ycombinator.com/vote?id=42948119&amp;how=up&amp;auth=be04f7f7696c49fc75297d1aa82f7fac773d256d&amp;goto=item%3Fid%3D42946718#42948119"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=e40" class=hnuser>e40</a> <span class=age title="2025-02-05T13:23:53 1738761833"><a href="https://news.ycombinator.com/item?id=42948119">8 hours ago</a></span> <span id=unv_42948119></span> <span class=navs>
+ | <a href=#42955014 class=clicky aria-hidden=true>prev</a> | <a href=#42947113 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42948119 n=6 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">Any idea how long before this makes it into Firefox?</div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42948119&amp;goto=item%3Fid%3D42946718%2342948119" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42948516><td><table border=0> <tbody><tr> <td class=ind indent=1><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=40><td valign=top class=votelinks>
+ <center><a id=up_42948516 class=clicky href="https://news.ycombinator.com/vote?id=42948516&amp;how=up&amp;auth=9b5cc1d247a862f4749a689979002b446d57ad19&amp;goto=item%3Fid%3D42946718#42948516"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=AshleysBrain" class=hnuser>AshleysBrain</a> <span class=age title="2025-02-05T13:55:38 1738763738"><a href="https://news.ycombinator.com/item?id=42948516">7 hours ago</a></span> <span id=unv_42948516></span> <span class=navs>
+ | <a href=#42948119 class=clicky aria-hidden=true>parent</a> | <a href=#42949502 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42948516 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">Mozilla have a positive view of the API [1], but it doesn't look like development has started [2].<p>[1] <a href=https://github.com/mozilla/standards-positions/issues/1053>https://github.com/mozilla/standards-positions/issues/1053</a><p>[2] <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1923880" rel=nofollow>https://bugzilla.mozilla.org/show_bug.cgi?id=1923880</a></p></div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42948516&amp;goto=item%3Fid%3D42946718%2342948516" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42949502><td><table border=0> <tbody><tr> <td class=ind indent=1><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=40><td valign=top class=votelinks>
+ <center><a id=up_42949502 class=clicky href="https://news.ycombinator.com/vote?id=42949502&amp;how=up&amp;auth=8a3f4c1bc8ecce12300e61f598af756585ced288&amp;goto=item%3Fid%3D42946718#42949502"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=AlexErrant" class=hnuser>AlexErrant</a> <span class=age title="2025-02-05T15:09:17 1738768157"><a href="https://news.ycombinator.com/item?id=42949502">6 hours ago</a></span> <span id=unv_42949502></span> <span class=navs>
+ | <a href=#42948119 class=clicky aria-hidden=true>parent</a> | <a href=#42948516 class=clicky aria-hidden=true>prev</a> | <a href=#42949975 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42949502 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">Here's Webkit's tracking issue <a href="https://bugs.webkit.org/show_bug.cgi?id=281223" rel=nofollow>https://bugs.webkit.org/show_bug.cgi?id=281223</a><p>No movement since its creation on October 10, 2024</p></div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42949502&amp;goto=item%3Fid%3D42946718%2342949502" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42949975><td><table border=0> <tbody><tr> <td class=ind indent=1><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=40><td valign=top class=votelinks>
+ <center><a id=up_42949975 class=clicky href="https://news.ycombinator.com/vote?id=42949975&amp;how=up&amp;auth=e8f652cdfb8f4a5378a37aac52dc5f18b2e1546f&amp;goto=item%3Fid%3D42946718#42949975"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=culi" class=hnuser>culi</a> <span class=age title="2025-02-05T15:35:46 1738769746"><a href="https://news.ycombinator.com/item?id=42949975">5 hours ago</a></span> <span id=unv_42949975></span> <span class=navs>
+ | <a href=#42948119 class=clicky aria-hidden=true>parent</a> | <a href=#42949502 class=clicky aria-hidden=true>prev</a> | <a href=#42951921 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42949975 n=2 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">It's still an Emerging Web Specification. Seems a little premature to remove the feature flag tbh</div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42949975&amp;goto=item%3Fid%3D42946718%2342949975" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42950235><td><table border=0> <tbody><tr> <td class=ind indent=2><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=80><td valign=top class=votelinks>
+ <center><a id=up_42950235 class=clicky href="https://news.ycombinator.com/vote?id=42950235&amp;how=up&amp;auth=bba86d26327432da490beb6e1d8e9e8cbda8ea40&amp;goto=item%3Fid%3D42946718#42950235"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=AlexErrant" class=hnuser>AlexErrant</a> <span class=age title="2025-02-05T15:50:15 1738770615"><a href="https://news.ycombinator.com/item?id=42950235">5 hours ago</a></span> <span id=unv_42950235></span> <span class=navs>
+ | <a href=#42948119 class=clicky aria-hidden=true>root</a> | <a href=#42949975 class=clicky aria-hidden=true>parent</a> | <a href=#42951921 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42950235 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">It's stage 3... and "the existence of stage 4 is basically a formality"<p>&gt; [stage 3] basically means "finished, pending editorial nit review---but since multiple implementations haven't happened yet, there's a reasonable chance that we'll discover something is broken, and need to fix the normative content<p><a href=https://github.com/whatwg/meta/issues/336#issuecomment-2487474159>https://github.com/whatwg/meta/issues/336#issuecomment-24874...</a></p></div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42950235&amp;goto=item%3Fid%3D42946718%2342950235" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42951921><td><table border=0> <tbody><tr> <td class=ind indent=1><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=40><td valign=top class=votelinks>
+ <center><a id=up_42951921 class=clicky href="https://news.ycombinator.com/vote?id=42951921&amp;how=up&amp;auth=d7629ff362a09dd37ce0dde06f14b4956f6ef2f6&amp;goto=item%3Fid%3D42946718#42951921"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=sureIy" class=hnuser>sureIy</a> <span class=age title="2025-02-05T17:23:03 1738776183"><a href="https://news.ycombinator.com/item?id=42951921">4 hours ago</a></span> <span id=unv_42951921></span> <span class=navs>
+ | <a href=#42948119 class=clicky aria-hidden=true>parent</a> | <a href=#42949975 class=clicky aria-hidden=true>prev</a> | <a href=#42947113 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42951921 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">2028 at best</div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42951921&amp;goto=item%3Fid%3D42946718%2342951921" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42947113><td><table border=0> <tbody><tr> <td class=ind indent=0><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=0><td valign=top class=votelinks>
+ <center><a id=up_42947113 class=clicky href="https://news.ycombinator.com/vote?id=42947113&amp;how=up&amp;auth=7a02c9107d2445e35ff5a70b3d4b9e2155706898&amp;goto=item%3Fid%3D42946718#42947113"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=salve-for-tears" class=hnuser><font color=#3c963c>salve-for-tears</font></a> <span class=age title="2025-02-05T11:38:33 1738755513"><a href="https://news.ycombinator.com/item?id=42947113">9 hours ago</a></span> <span id=unv_42947113></span> <span class=navs>
+ | <a href=#42948119 class=clicky aria-hidden=true>prev</a> | <a href=#42949577 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42947113 n=4 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">Wow! This is actually an amazing feature. Rendering a list of items in which the order can change has always been annoying. I can see this feature greatly improving the situation.</div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42947113&amp;goto=item%3Fid%3D42946718%2342947113" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42949000><td><table border=0> <tbody><tr> <td class=ind indent=1><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=40><td valign=top class=votelinks>
+ <center><a id=up_42949000 class=clicky href="https://news.ycombinator.com/vote?id=42949000&amp;how=up&amp;auth=f7a2bb5da8d7cc0993c2c4d30d5310162427ccab&amp;goto=item%3Fid%3D42946718#42949000"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=Feathercrown" class=hnuser>Feathercrown</a> <span class=age title="2025-02-05T14:35:35 1738766135"><a href="https://news.ycombinator.com/item?id=42949000">6 hours ago</a></span> <span id=unv_42949000></span> <span class=navs>
+ | <a href=#42947113 class=clicky aria-hidden=true>parent</a> | <a href=#42949577 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42949000 n=3 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">Flexbox allowed this within a flat list, but this is much more applicable</div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42949000&amp;goto=item%3Fid%3D42946718%2342949000" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42950255><td><table border=0> <tbody><tr> <td class=ind indent=2><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=80><td valign=top class=votelinks>
+ <center><a id=up_42950255 class=clicky href="https://news.ycombinator.com/vote?id=42950255&amp;how=up&amp;auth=a0c01dc825a9b3644160d5cb0529ad9386c08730&amp;goto=item%3Fid%3D42946718#42950255"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=arianvanp" class=hnuser>arianvanp</a> <span class=age title="2025-02-05T15:51:24 1738770684"><a href="https://news.ycombinator.com/item?id=42950255">5 hours ago</a></span> <span id=unv_42950255></span> <span class=navs>
+ | <a href=#42947113 class=clicky aria-hidden=true>root</a> | <a href=#42949000 class=clicky aria-hidden=true>parent</a> | <a href=#42949577 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42950255 n=2 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">reordering elements with CSS does not reorder them in the accessibility tree and thus is not really a good option in my opinion.</div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42950255&amp;goto=item%3Fid%3D42946718%2342950255" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42955079><td><table border=0> <tbody><tr> <td class=ind indent=3><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=120><td valign=top class=votelinks>
+ <center><a id=up_42955079 class=clicky href="https://news.ycombinator.com/vote?id=42955079&amp;how=up&amp;auth=43dcdcd124d234213f3166cedb3890d660a46735&amp;goto=item%3Fid%3D42946718#42955079"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=paradox460" class=hnuser>paradox460</a> <span class=age title="2025-02-05T21:02:59 1738789379"><a href="https://news.ycombinator.com/item?id=42955079">30 minutes ago</a></span> <span id=unv_42955079></span> <span class=navs>
+ | <a href=#42947113 class=clicky aria-hidden=true>root</a> | <a href=#42950255 class=clicky aria-hidden=true>parent</a> | <a href=#42949577 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42955079 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">I've actually abused this feature in the past to satisfy bone headed layout decisions from on high that would have a dramatic negative effect on accessibility</div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42955079&amp;goto=item%3Fid%3D42946718%2342955079" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42949577><td><table border=0> <tbody><tr> <td class=ind indent=0><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=0><td valign=top class=votelinks>
+ <center><a id=up_42949577 class=clicky href="https://news.ycombinator.com/vote?id=42949577&amp;how=up&amp;auth=cfbdd0b4a60ddb17bdf012c75aca7779cc22c8bc&amp;goto=item%3Fid%3D42946718#42949577"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=cetinsert" class=hnuser>cetinsert</a> <span class=age title="2025-02-05T15:13:52 1738768432"><a href="https://news.ycombinator.com/item?id=42949577">6 hours ago</a></span> <span id=unv_42949577></span> <span class=navs>
+ | <a href=#42947113 class=clicky aria-hidden=true>prev</a> | <a href=#42950287 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42949577 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00"><a href=https://dom.rt.ht/moveBefore rel=nofollow>https://dom.rt.ht/moveBefore</a> is a playground with 2-way I-O sync!<p>The editor of the playground shows you the live DOM in its editor.</p></div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42949577&amp;goto=item%3Fid%3D42946718%2342949577" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42950287><td><table border=0> <tbody><tr> <td class=ind indent=0><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=0><td valign=top class=votelinks>
+ <center><a id=up_42950287 class=clicky href="https://news.ycombinator.com/vote?id=42950287&amp;how=up&amp;auth=3900751499cf9ab3edb73bb230248188005b82c4&amp;goto=item%3Fid%3D42946718#42950287"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=XCSme" class=hnuser>XCSme</a> <span class=age title="2025-02-05T15:53:19 1738770799"><a href="https://news.ycombinator.com/item?id=42950287">5 hours ago</a></span> <span id=unv_42950287></span> <span class=navs>
+ | <a href=#42949577 class=clicky aria-hidden=true>prev</a> | <a href=#42950429 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42950287 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c5A">Nice, I was just adding <a href=https://github.com/react-grid-layout/react-grid-layout>https://github.com/react-grid-layout/react-grid-layout</a> to a dashboard, where you can drag/re-order charts. I assume this would make the implementation better.</div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42950287&amp;goto=item%3Fid%3D42946718%2342950287" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42950429><td><table border=0> <tbody><tr> <td class=ind indent=0><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=0><td valign=top class=votelinks>
+ <center><a id=up_42950429 class=clicky href="https://news.ycombinator.com/vote?id=42950429&amp;how=up&amp;auth=4b54a58f0ed2e07fc584ff20b78b5a259591752f&amp;goto=item%3Fid%3D42946718#42950429"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=tengbretson" class=hnuser>tengbretson</a> <span class=age title="2025-02-05T16:01:42 1738771302"><a href="https://news.ycombinator.com/item?id=42950429">5 hours ago</a></span> <span id=unv_42950429></span> <span class=navs>
+ | <a href=#42950287 class=clicky aria-hidden=true>prev</a> | <a href=#42953400 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42950429 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c5A">I haven't thought through how, but being able to move an element that has focus just has the feeling of something that could be exploited.</div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42950429&amp;goto=item%3Fid%3D42946718%2342950429" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42953400><td><table border=0> <tbody><tr> <td class=ind indent=0><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=0><td valign=top class=votelinks>
+ <center><a id=up_42953400 class=clicky href="https://news.ycombinator.com/vote?id=42953400&amp;how=up&amp;auth=77e7ac30b6aacff7947903957d918424850f3356&amp;goto=item%3Fid%3D42946718#42953400"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=etchalon" class=hnuser>etchalon</a> <span class=age title="2025-02-05T18:59:26 1738781966"><a href="https://news.ycombinator.com/item?id=42953400">2 hours ago</a></span> <span id=unv_42953400></span> <span class=navs>
+ | <a href=#42950429 class=clicky aria-hidden=true>prev</a> | <a href=#42947395 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42953400 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">This is one of those things you're shocked to find out didn't exist before.</div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42953400&amp;goto=item%3Fid%3D42946718%2342953400" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42947395><td><table border=0> <tbody><tr> <td class=ind indent=0><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=0><td valign=top class=votelinks>
+ <center><a id=up_42947395 class=clicky href="https://news.ycombinator.com/vote?id=42947395&amp;how=up&amp;auth=48621b191d69e8a2a3e174a9e7d0571b4280ca3f&amp;goto=item%3Fid%3D42946718#42947395"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=klinch" class=hnuser>klinch</a> <span class=age title="2025-02-05T12:10:35 1738757435"><a href="https://news.ycombinator.com/item?id=42947395">9 hours ago</a></span> <span id=unv_42947395></span> <span class=navs>
+ | <a href=#42953400 class=clicky aria-hidden=true>prev</a> | <a href=#42947011 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42947395 n=13 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">Honestly curious - Does anyone have a use case for this? I tried hard to figure out what this could be used for, but couldn't come up with anything.</div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42947395&amp;goto=item%3Fid%3D42946718%2342947395" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42947945><td><table border=0> <tbody><tr> <td class=ind indent=1><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=40><td valign=top class=votelinks>
+ <center><a id=up_42947945 class=clicky href="https://news.ycombinator.com/vote?id=42947945&amp;how=up&amp;auth=4c7aba652d92f221840448e936c3314fc63fd3be&amp;goto=item%3Fid%3D42946718#42947945"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=AshleysBrain" class=hnuser>AshleysBrain</a> <span class=age title="2025-02-05T13:06:31 1738760791"><a href="https://news.ycombinator.com/item?id=42947945">8 hours ago</a></span> <span id=unv_42947945></span> <span class=navs>
+ | <a href=#42947395 class=clicky aria-hidden=true>parent</a> | <a href=#42949815 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42947945 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">Previously if you moved an element anywhere else in the DOM for any reason - such as reordering elements, sorting a list, etc. - lots of kinds of elements would be reset: iframes reloaded, transitions/animations are cancelled, video playback is reset, focus is lost, even the scroll position is reset to the top. Some could be worked around (like saving the scroll position and restoring it), but others could not (like iframes being reloaded). Now with moveBefore() all these moves can be done while preserving the element state, which can dramatically simplify the usage of the DOM in some cases.</div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42947945&amp;goto=item%3Fid%3D42946718%2342947945" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42949815><td><table border=0> <tbody><tr> <td class=ind indent=1><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=40><td valign=top class=votelinks>
+ <center><a id=up_42949815 class=clicky href="https://news.ycombinator.com/vote?id=42949815&amp;how=up&amp;auth=95766dea0ca0b3ae980468db735135575a83a7e8&amp;goto=item%3Fid%3D42946718#42949815"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=Lerc" class=hnuser>Lerc</a> <span class=age title="2025-02-05T15:26:58 1738769218"><a href="https://news.ycombinator.com/item?id=42949815">6 hours ago</a></span> <span id=unv_42949815></span> <span class=navs>
+ | <a href=#42947395 class=clicky aria-hidden=true>parent</a> | <a href=#42947945 class=clicky aria-hidden=true>prev</a> | <a href=#42947615 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42949815 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">I have a little test that has a DateStamp of 2011 that suggests I needed this functionality some time ago.<p><a href=https://fingswotidun.com/tests/appendNode/ rel=nofollow>https://fingswotidun.com/tests/appendNode/</a><p>It's interesting that they added new functions to support the new (essentially correct) behaviour. I guess there are people out there that have used moving nodes as a way to delete hidden state.</p></div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42949815&amp;goto=item%3Fid%3D42946718%2342949815" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42947615><td><table border=0> <tbody><tr> <td class=ind indent=1><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=40><td valign=top class=votelinks>
+ <center><a id=up_42947615 class=clicky href="https://news.ycombinator.com/vote?id=42947615&amp;how=up&amp;auth=3f90c227e37ef046b1e57a6787eea88d265bf2a7&amp;goto=item%3Fid%3D42946718#42947615"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=sublinear" class=hnuser>sublinear</a> <span class=age title="2025-02-05T12:35:15 1738758915"><a href="https://news.ycombinator.com/item?id=42947615">8 hours ago</a></span> <span id=unv_42947615></span> <span class=navs>
+ | <a href=#42947395 class=clicky aria-hidden=true>parent</a> | <a href=#42949815 class=clicky aria-hidden=true>prev</a> | <a href=#42948043 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42947615 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">I'm thinking about better responsive UI designs that don't frustrate the user. Everyone hates cumulative layout shift as things load in and window resizes also require layout changes which are often implemented poorly.<p>I'm also thinking about situations where passing accessibility audits is nearly impossible and at odds with business and marketing insisting on complex designs that need to handle a lot of use cases on one page without making the user navigate to another page. Inevitably you find that there's a lot of display state in the DOM you can't serialize, and on the other end of the spectrum simple pages shouldn't need bloated JS web app frameworks just to maintain the state of a form.<p>For new projects I can see this significantly reducing the JS and CSS needed. Layout change isn't triggered just by screen width but user input state. Right now I see a lot of web projects with ugly CSS (relative positioning or sometimes mind bending stuff with grid/flex) and ugly JS doing error prone element attribute accounting that ultimately wouldn't be necessary if you could just restructure the DOM on the fly.<p>If you want an example for accessibility, since I think that's usually a big showstopper, many UI designs want z-indexy things such as context menus, tooltips, popups, notifications, modal forms, etc. that would not pass an audit because they're not properly contained within the structure of the page and technically live somewhere rattling around loosely in the &lt;body&gt; with a ton of CSS applied to complete the illusion.</p></div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42947615&amp;goto=item%3Fid%3D42946718%2342947615" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42948043><td><table border=0> <tbody><tr> <td class=ind indent=1><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=40><td valign=top class=votelinks>
+ <center><a id=up_42948043 class=clicky href="https://news.ycombinator.com/vote?id=42948043&amp;how=up&amp;auth=5af2be8ead5876921688c580ba53364c8bdc8153&amp;goto=item%3Fid%3D42946718#42948043"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=jitl" class=hnuser>jitl</a> <span class=age title="2025-02-05T13:16:13 1738761373"><a href="https://news.ycombinator.com/item?id=42948043">8 hours ago</a></span> <span id=unv_42948043></span> <span class=navs>
+ | <a href=#42947395 class=clicky aria-hidden=true>parent</a> | <a href=#42947615 class=clicky aria-hidden=true>prev</a> | <a href=#42947429 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42948043 n=3 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">This is exciting<p>- move embedded iframe to lightbox for “full screen” and back<p>- drag and drop of elements without resetting their state<p>- I’m very curious if it works with contenteditable and/or input method editors. The specifics here are complex so I’m guessing it won’t work, but if it does it will unlock a new bag of tricks for dealing with various problems one encounters when building a rich editor like Notion</p></div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42948043&amp;goto=item%3Fid%3D42946718%2342948043" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42955120><td><table border=0> <tbody><tr> <td class=ind indent=2><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=80><td valign=top class=votelinks>
+ <center><a id=up_42955120 class=clicky href="https://news.ycombinator.com/vote?id=42955120&amp;how=up&amp;auth=ad590720ab1d6e3aa3c27eae1a3a6614ce6cfc59&amp;goto=item%3Fid%3D42946718#42955120"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=paradox460" class=hnuser>paradox460</a> <span class=age title="2025-02-05T21:06:24 1738789584"><a href="https://news.ycombinator.com/item?id=42955120">26 minutes ago</a></span> <span id=unv_42955120></span> <span class=navs>
+ | <a href=#42947395 class=clicky aria-hidden=true>root</a> | <a href=#42948043 class=clicky aria-hidden=true>parent</a> | <a href=#42948981 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42955120 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">&gt; drag and drop of elements without resetting their state<p>Could recreate that famous old Mac OS X demo where a video keeps playing while minimized</p></div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42955120&amp;goto=item%3Fid%3D42946718%2342955120" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42948981><td><table border=0> <tbody><tr> <td class=ind indent=2><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=80><td valign=top class=votelinks>
+ <center><a id=up_42948981 class=clicky href="https://news.ycombinator.com/vote?id=42948981&amp;how=up&amp;auth=468257aee19f7c2d104ce72a8d822ee84c673a44&amp;goto=item%3Fid%3D42946718#42948981"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=Springtime" class=hnuser>Springtime</a> <span class=age title="2025-02-05T14:34:17 1738766057"><a href="https://news.ycombinator.com/item?id=42948981">6 hours ago</a></span> <span id=unv_42948981></span> <span class=navs>
+ | <a href=#42947395 class=clicky aria-hidden=true>root</a> | <a href=#42948043 class=clicky aria-hidden=true>parent</a> | <a href=#42955120 class=clicky aria-hidden=true>prev</a> | <a href=#42947429 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42948981 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00"><i>&gt; move embedded iframe to lightbox for “full screen” and back</i><p>Presumably this would also preserve the state of animations, such as GIFs and objects with embedded animated documents (like SVG). With current methods these get reset (along with the already mentioned video state) which break the illusion of an element being transported elsewhere when the original can't be just literally moved.</p></div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42948981&amp;goto=item%3Fid%3D42946718%2342948981" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42947429><td><table border=0> <tbody><tr> <td class=ind indent=1><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=40><td valign=top class=votelinks>
+ <center><a id=up_42947429 class=clicky href="https://news.ycombinator.com/vote?id=42947429&amp;how=up&amp;auth=3af4e8cbc635c95cdc17514e6e2f7127e00864d5&amp;goto=item%3Fid%3D42946718#42947429"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=jy14898" class=hnuser>jy14898</a> <span class=age title="2025-02-05T12:15:46 1738757746"><a href="https://news.ycombinator.com/item?id=42947429">9 hours ago</a></span> <span id=unv_42947429></span> <span class=navs>
+ | <a href=#42947395 class=clicky aria-hidden=true>parent</a> | <a href=#42948043 class=clicky aria-hidden=true>prev</a> | <a href=#42950001 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42947429 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00"><a href=https://reparent.jarhar.com/ rel=nofollow>https://reparent.jarhar.com/</a>. Perhaps a good example is popping out a form when the user wants to navigate elsewhere to answer the questions.</div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42947429&amp;goto=item%3Fid%3D42946718%2342947429" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42950001><td><table border=0> <tbody><tr> <td class=ind indent=1><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=40><td valign=top class=votelinks>
+ <center><a id=up_42950001 class=clicky href="https://news.ycombinator.com/vote?id=42950001&amp;how=up&amp;auth=809b9872589f8bdc91845032ca16521963ecce9c&amp;goto=item%3Fid%3D42946718#42950001"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=culi" class=hnuser>culi</a> <span class=age title="2025-02-05T15:37:35 1738769855"><a href="https://news.ycombinator.com/item?id=42950001">5 hours ago</a></span> <span id=unv_42950001></span> <span class=navs>
+ | <a href=#42947395 class=clicky aria-hidden=true>parent</a> | <a href=#42947429 class=clicky aria-hidden=true>prev</a> | <a href=#42947656 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42950001 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">This is a huge deal for SPA libraries which are, like it or not, fundamental to modern web development<p>I expect this and the View Transition API to have massive implications for the way libraries are written. And hopefully positive ones. Allowing libraries to "use the platform" more closely</p></div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42950001&amp;goto=item%3Fid%3D42946718%2342950001" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42947656><td><table border=0> <tbody><tr> <td class=ind indent=1><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=40><td valign=top class=votelinks>
+ <center><a id=up_42947656 class=clicky href="https://news.ycombinator.com/vote?id=42947656&amp;how=up&amp;auth=1e2eb792f269bacf46f4644604dd4f36765d1987&amp;goto=item%3Fid%3D42946718#42947656"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=jsiepkes" class=hnuser>jsiepkes</a> <span class=age title="2025-02-05T12:38:38 1738759118"><a href="https://news.ycombinator.com/item?id=42947656">8 hours ago</a></span> <span id=unv_42947656></span> <span class=navs>
+ | <a href=#42947395 class=clicky aria-hidden=true>parent</a> | <a href=#42950001 class=clicky aria-hidden=true>prev</a> | <a href=#42948709 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42947656 n=2 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">I assume this is big news for htmx (and the likes)?</div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42947656&amp;goto=item%3Fid%3D42946718%2342947656" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42948078><td><table border=0> <tbody><tr> <td class=ind indent=2><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=80><td valign=top class=votelinks>
+ <center><a id=up_42948078 class=clicky href="https://news.ycombinator.com/vote?id=42948078&amp;how=up&amp;auth=b935a3c3a464fd429767c29365a067148badfc15&amp;goto=item%3Fid%3D42946718#42948078"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=beardyw" class=hnuser>beardyw</a> <span class=age title="2025-02-05T13:19:36 1738761576"><a href="https://news.ycombinator.com/item?id=42948078">8 hours ago</a></span> <span id=unv_42948078></span> <span class=navs>
+ | <a href=#42947395 class=clicky aria-hidden=true>root</a> | <a href=#42947656 class=clicky aria-hidden=true>parent</a> | <a href=#42948709 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42948078 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">Htmx has experimental support.</div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42948078&amp;goto=item%3Fid%3D42946718%2342948078" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42948709><td><table border=0> <tbody><tr> <td class=ind indent=1><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=40><td valign=top class=votelinks>
+ <center><a id=up_42948709 class=clicky href="https://news.ycombinator.com/vote?id=42948709&amp;how=up&amp;auth=c481d3e3940422a1b80d0d811dfafb3e09d2c6c8&amp;goto=item%3Fid%3D42946718#42948709"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=panic" class=hnuser>panic</a> <span class=age title="2025-02-05T14:12:35 1738764755"><a href="https://news.ycombinator.com/item?id=42948709">7 hours ago</a></span> <span id=unv_42948709></span> <span class=navs>
+ | <a href=#42947395 class=clicky aria-hidden=true>parent</a> | <a href=#42947656 class=clicky aria-hidden=true>prev</a> | <a href=#42947734 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42948709 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c00">Any layout system that modifies the DOM currently has to be careful not to touch certain elements (like focused text fields) if possible. Preserving state means you could treat these elements like any other, rebuilding the DOM out from underneath them as you please.</div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42948709&amp;goto=item%3Fid%3D42946718%2342948709" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr" id=42947734><td><table border=0> <tbody><tr> <td class=ind indent=1><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=40><td valign=top class=votelinks>
+ <center><a id=up_42947734 class=clicky href="https://news.ycombinator.com/vote?id=42947734&amp;how=up&amp;auth=e6b7ea5600d7f48ecf15ac554fb3842bdd282530&amp;goto=item%3Fid%3D42946718#42947734"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=spiderfarmer" class=hnuser>spiderfarmer</a> <span class=age title="2025-02-05T12:46:07 1738759567"><a href="https://news.ycombinator.com/item?id=42947734">8 hours ago</a></span> <span id=unv_42947734></span> <span class=navs>
+ | <a href=#42947395 class=clicky aria-hidden=true>parent</a> | <a href=#42948709 class=clicky aria-hidden=true>prev</a> | <a href=#42947011 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42947734 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c88">If Chrome takes the lead it's probably all about moving ads around on the page.</div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42947734&amp;goto=item%3Fid%3D42946718%2342947734" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ <tr class="athing comtr coll" id=42947011><td><table border=0> <tbody><tr> <td class=ind indent=0><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=0><td valign=top class="votelinks nosee">
+ <center><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=14></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=egberts1" class=hnuser>egberts1</a> <span class=age title="2025-02-05T11:25:57 1738754757"><a href="https://news.ycombinator.com/item?id=42947011">10 hours ago</a></span> <span id=unv_42947011></span> <span class=navs>
+ | <a href=#42947395 class=clicky aria-hidden=true>prev</a> | <a href=#42948828 class=clicky aria-hidden=true>next</a> <a class="togg clicky" id=42947011 n=11 href=javascript:void(0)>[11 more]</a><span class=onstory></span> </span>
+ </span></div><br><div class="comment noshow sf-hidden">
+ [flagged] </div></tr>
+ </table></tr>
+ <tr class="athing comtr noshow sf-hidden" id=42947657></tr>
+ <tr class="athing comtr noshow sf-hidden" id=42947454></tr>
+ <tr class="athing comtr noshow sf-hidden" id=42948095></tr>
+ <tr class="athing comtr noshow sf-hidden" id=42950651></tr>
+ <tr class="athing comtr noshow sf-hidden" id=42955038></tr>
+ <tr class="athing comtr noshow sf-hidden" id=42947075></tr>
+ <tr class="athing comtr noshow sf-hidden" id=42947178></tr>
+ <tr class="athing comtr noshow sf-hidden" id=42947318></tr>
+ <tr class="athing comtr noshow sf-hidden" id=42947294></tr>
+ <tr class="athing comtr noshow sf-hidden" id=42947403></tr>
+ <tr class="athing comtr" id=42948828><td><table border=0> <tbody><tr> <td class=ind indent=0><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=1 width=0><td valign=top class=votelinks>
+ <center><a id=up_42948828 class=clicky href="https://news.ycombinator.com/vote?id=42948828&amp;how=up&amp;auth=f14b17fc76c7b79029620094a71a11330b9e8a5a&amp;goto=item%3Fid%3D42946718#42948828"><div class=votearrow title=upvote></div></a></center> <td class=default><div style=margin-top:2px;margin-bottom:-10px><span class=comhead>
+ <a href="https://news.ycombinator.com/user?id=qwertox" class=hnuser>qwertox</a> <span class=age title="2025-02-05T14:22:28 1738765348"><a href="https://news.ycombinator.com/item?id=42948828">7 hours ago</a></span> <span id=unv_42948828></span> <span class=navs>
+ | <a href=#42947011 class=clicky aria-hidden=true>prev</a> <a class="togg clicky" id=42948828 n=1 href=javascript:void(0)>[–]</a><span class=onstory></span> </span>
+ </span></div><br><div class=comment>
+ <div class="commtext c88">If they could only fix the issue where resizing a text box almost grinds the entire OS to a halt, that would be nice.</div>
+ <div class=reply> <p><font size=1>
+ <u><a href="https://news.ycombinator.com/reply?id=42948828&amp;goto=item%3Fid%3D42946718%2342948828" rel=nofollow>reply</a></u>
+ </font>
+ </p></div></div></tr>
+ </table></tr>
+ </table>
+ <br><br>
+</tr>
+<tr><td><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" height=10 width=0><table width=100% cellspacing=0 cellpadding=1><tbody><tr><td bgcolor=#ff6600></table><br>
+<center><a href=https://www.ycombinator.com/apply/>Consider applying for YC's Spring batch! Applications are open till Feb 11.</a></center><br>
+<center><span class=yclinks><a href=https://news.ycombinator.com/newsguidelines.html>Guidelines</a> | <a href=https://news.ycombinator.com/newsfaq.html>FAQ</a> | <a href=https://news.ycombinator.com/lists>Lists</a> | <a href=https://github.com/HackerNews/API>API</a> | <a href=https://news.ycombinator.com/security.html>Security</a> | <a href=https://www.ycombinator.com/legal/>Legal</a> | <a href=https://www.ycombinator.com/apply/>Apply to YC</a> | <a href=mailto:hn@ycombinator.com>Contact</a></span><br><br>
+<form action=//hn.algolia.com/>Search: <input type=text name=q size=17 autocorrect=off spellcheck=false autocapitalize=none autocomplete=off value></form></center></tr> </table></center>
+ 
+ 
